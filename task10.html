@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tabs Plugin</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .tab-links {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        .tab-links li {
+            padding: 10px 15px;
+            background: #eee;
+        }
+
+        .active {
+            background: #3498db;
+            color: white;
+        }
+
+        .tab-content div {
+            display: none;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="tabs-container">
+
+        <ul class="tab-links">
+            <li data-tab="home" tabindex="0">Home</li>
+            <li data-tab="about" tabindex="0">About</li>
+            <li data-tab="contact" tabindex="0">Contact</li>
+        </ul>
+
+        <div class="tab-content">
+
+            <div id="home">
+                <p>Home Content</p>
+            </div>
+
+            <div id="about">
+                <p>About Content</p>
+            </div>
+
+            <div id="contact">
+                <p>Contact Content</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+    <script src="./task10.js">
+      
+
+    </script>
+
+</body>
+
+</html>
