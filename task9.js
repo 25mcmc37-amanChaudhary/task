@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  // JSON structure of form
+  
 
   const formData = [
     {
@@ -31,7 +31,7 @@ $(document).ready(function () {
     },
   ];
 
-  // Build form dynamically
+  
 
   formData.forEach(function (field) {
     let fieldHTML = "";
@@ -54,7 +54,7 @@ console.log("kk");
     $("#dynamicForm").append(fieldHTML);
   });
 
-  // Add state dropdown (conditional field)
+  
 
   $("#dynamicForm").append(`
 
@@ -87,7 +87,7 @@ console.log("kk");
     }
   });
 
-  // Form validation
+
 
   $("#submitBtn").click(function () {
     let valid = true;
@@ -143,3 +143,4 @@ console.log("kk");
     }
   });
 });
+
