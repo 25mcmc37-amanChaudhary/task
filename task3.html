@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+    * {
+        /* outline: 1px red solid; */
+        list-style: none;
+    }
+
+    body {
+        font-family: "Zalando Sans Expanded", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+        list-style: none;
+        overflow-x: hidden;
+        /* padding-bottom: 120px; */
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    nav {
+       
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid black;
+        top: 0;
+        height: 70px;
+        width: 100%;
+        position: fixed;
+        background-color: #bffcfe;
+    
+    }
+
+    .navOptions {
+        width: 30%;
+    }
+
+    .navOptions>ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navOptions>ul>li {
+        list-style: none;
+        cursor: pointer;
+    }
+
+    .navOptions>ul>li:hover {
+        animation: bgZoom 0.1s;
+    }
+
+    .productBanner{
+        /* padding-top: 40px; */
+    }
+
+    .productImg {
+        padding: 10px;
+    }
+
+    .productImg>img {
+        width: 100%;
+        height: auto;
+    }
+
+    .productCrousel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .productCrousel>* {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+
+    .productItem {
+        border: 1px solid rgb(204, 192, 192);
+        margin: 5px;
+        border-radius: 5px;
+    }
+
+    .productItem>div>img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .productDetails {
+        border-top: 1px rgb(204, 192, 192) solid;
+    }
+
+    .productDetails>h3 {
+        margin: 0px;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #bffcfe;
+        color: rgb(52, 41, 41);
+        text-align: center;
+    }
+
+    .footerSec {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+
+<body>
+    <nav id="mainNav">
+        <div>
+            <p> Kamali Kart <i class="bi bi-bag-heart-fill"></i></p>
+        </div>
+        <div class="navOptions">
+            <ul>
+                <li><span><i class="bi bi-house"></i></span>Home</li>
+                <li>About Us</li>
+                <li><span><i class="bi bi-cart-dash"></i></span>Cart</li>
+            </ul>
+        </div>
+    </nav>
+    <section class="productBanner" id="productBanner">
+        <div class="productImg">
+            <img src="s1.webp" alt="">
+        </div>
+    </section>
+
+    <section>
+        <div class="productCrousel">
+
+            <div class="productItem">
+                <div class="productImg">
+                    <img src="1.webp" alt="">
+                </div>
+                <div class="productDetails">
+                    <h3>
+                        Samsung
+                    </h3>
+                    <div>
+                        <li><span>RAM</span> 16 GB</li>
+                        <li><span>Storage</span> 256 GB</li>
+                        <li><span>Model</span> Galaxy26</li>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="productItem">
+                <div class="productImg">
+                    <img src="2.webp" alt="">
+                </div>
+                <div class="productDetails">
+                    <h3>
+                        Samsung
+                    </h3>
+
+                    <li><span>RAM</span> 16 GB</li>
+                    <li><span>Storage</span> 256 GB</li>
+                    <li><span>Model</span> Galaxy26</li>
+
+                </div>
+            </div>
+            <div class="productItem">
+                <div class="productImg">
+                    <img src="3.webp" alt="">
+                </div>
+                <div class="productDetails">
+                    <h3>
+                        Samsung
+                    </h3>
+
+                    <li><span>RAM</span> 16 GB</li>
+                    <li><span>Storage</span> 256 GB</li>
+                    <li><span>Model</span> Galaxy26</li>
+
+                </div>
+            </div>
+            <div class="productItem">
+                <div class="productImg">
+                    <img src="3.webp" alt="">
+                </div>
+                <div class="productDetails">
+                    <h3>
+                        Samsung
+                    </h3>
+                    <div cla>
+                        <li><span>RAM</span> 16 GB</li>
+                        <li><span>Storage</span> 256 GB</li>
+                        <li><span>Model</span> Galaxy26</li>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="proBanSec">
+        <div class="productImg">
+            <img src="s2.webp" alt="">
+        </div>
+    </section>
+
+    <footer id="proFooter">
+        <div class="footerSec">
+            <div>
+                <ul>
+                    <li>
+                        <h3>Links</h3>
+                    </li>
+                    <li>Home</li>
+                    <li>Address</li>
+                    <li>About</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <h3>Links</h3>
+                    </li>
+                    <li>Contact us</li>
+                    <li> Yo Yo songs </li>
+                    <li> Badshah</li>
+                </ul>
+
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <h3>Links</h3>
+                    </li>
+                    <li>Contact us</li>
+                    <li> Yo Yo songs </li>
+                    <li> Badshah</li>
+                </ul>
+
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <h3>Links</h3>
+                    </li>
+                    <li>Contact us</li>
+                    <li> Yo Yo songs </li>
+                    <li> Badshah</li>
+                </ul>
+
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+<script>
+    const pBan= document.getElementById("productBanner");
+    const pNav= document.getElementById("mainNav");
+    const pfoo= document.getElementById("proFooter");
+    const pBanSec= document.getElementById("proBanSec");
+    pBan.style.paddingTop = pNav.offsetHeight + "px";
+    pBanSec.style.paddingBottom = pfoo.offsetHeight + "px";
+
+</script>
+
+</html>

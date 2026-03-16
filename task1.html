@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<style>
+    body{
+        /* outline:1px solid red; */
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-image: url("./751.jpg");
+        background-attachment: fixed;
+    }
+
+    .secCrousel{
+        border: 2px 2px 2px red;
+    }
+    .storeName{
+        align-self: center;
+    }
+    .storeName>a{
+        text-decoration: none;
+      
+        color: black;
+        font-size: medium;
+    }
+    .mainNav div:nth-of-type(2){
+        color: black;
+    }
+</style>
+<body>
+    <header  class="container">
+        <h1>Kamali Book Store</h1>
+        <p>A kamali enterprise</p>
+    </header>
+    <section class="container">
+<hr>
+    <nav class="row">
+        <article class="d-flex justify-content-between mainNav" >
+            <div class="storeName">
+                <a href="index.html"  ><h5>Kamali Book's</h5></a>
+            </div>
+            <div>
+                <ul class="d-flex ">
+                    <li class="list-group-item p-2">Home</li>
+                    <li class="list-group-item p-2">About</li>
+                    <li  class="list-group-item p-2">Contact Us</li>
+                </ul>
+            </div>
+        </article>
+        
+    </nav>
+    <hr>
+</section>
+
+    <main>
+        <!-- slider -->
+        <section class="container secCrousel">
+            <div class=" d-flex justify-content-center">
+                <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 30px;"> Our Books</h1>
+            </div>
+            <div class="row d-flex p-4">
+                <div class="img-fluid col-md-3">
+                    <img class="img-fluid" src="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F397089a6-bb92-48a9-8a27-504a1f8f1a63.jpeg" alt="">
+                </div>
+                <div class="img-fluid col-md-3">
+                    <img class="img-fluid" src="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F3988d1a9-0be6-4300-90f5-adaa682c8d47.jpeg" alt="">
+                </div>
+                <div class="img-fluid col-md-3">
+                    <img class="img-fluid"src="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F354c6924-4515-4479-bc60-0d96ead60640.webp" alt="">
+                </div>
+                <div class="img-fluid col-md-3">
+                    <img class="img-fluid"src="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F5a588929-1eeb-4d88-ba87-62759c010256.jpeg " alt="">   
+         </div> 
+        </section>
+        <!-- books -->
+        <section class="container">
+            <div class=" d-flex justify-content-center">
+                <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 30px;"> Top Sellers</h1>
+            </div>
+            <div class="row d-flex p-4 justify-content-between ">
+
+                <div class="card col-md-3" >
+                    <img class="img-fluid" src="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4f9a52f9-25ae-4d15-9be0-80f1f8d8ff9b.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card col-md-3" >
+                    <img class="img-fluid" src="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F920c524b-aaae-4de3-b6b7-d1a384b7e11f.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card col-md-3" >
+                    <img class="img-fluid" src="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F00e1fba5-8915-4b6d-bfaf-18dd8ae9c7fe.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                  
+                <div class="card col-md-3" >
+                    <img class="img-fluid" src="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F040f1b9f-36ac-46bc-8914-c8cc57ebec06.jpeg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                  
+
+            </div>
+        </section>
+    </main>
+<hr>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <p>&copy; Kamali Book store</p>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    
+</body>
+</html>

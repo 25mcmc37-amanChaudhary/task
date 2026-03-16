@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        box-sizing: border-box;
+        margin: 0px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .container{
+            margin: 30px;
+    border: 2px solid #d5bbbb;
+    padding: 5px;
+    box-shadow: -1px 20px 8px 9px #867674;
+    height: 80vh;
+    overflow: scroll;
+    }
+
+    .navBar {
+        background: wheat;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .navBar>div:nth-of-type(1)>p {
+        font-size: larger;
+    }
+
+    .navOption {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .navOption>li {
+        text-decoration: none;
+        font-size: large;
+        list-style: none;
+        cursor: pointer;
+
+    }
+
+    .navBar>div {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .blogDiv{
+        border: 1px solid;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .blogDiv>h3{
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+    <!-- nav -->
+
+    <nav class="navBar">
+        <div>
+            <p>Fami Blogs</p>
+        </div>
+        <div>
+            <ul class="navOption">
+                <li>Home</li>
+                <li>About us</li>
+                <li>Sign In</li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- blogs -->
+    <section>
+        <div class="container">
+            <div class="blogDiv">
+                <H3>AUTHOR : SAM BIHARI</H3>
+                <p>
+                <h4>🌱 1. The Quiet Power of Morning Walks</h4>
+
+                Morning walks have a strange kind of magic.
+                The world feels slower before everyone wakes up.
+                Birds sound louder, and thoughts feel clearer.
+                Walking without headphones helps the mind breathe.
+                You start noticing trees, streets, and small details.
+                It’s a gentle way to wake your body.
+                Ideas often appear without effort.
+                Stress feels lighter in the cool air.
+                Consistency matters more than distance.
+                Sometimes, peace begins with a few steps.
+                </p>
+
+            </div>
+            <div class="blogDiv">
+                <H3>AUTHOR : SAM BIHARI</H3>
+                <p>
+                <h4>
+                    💻 2. Why Learning to Code Changes How You Think
+                </h4>
+
+                Coding is not just about writing programs.
+                It teaches problem-solving in small logical steps.
+                Errors become teachers instead of failures.
+                You learn patience by debugging tiny mistakes.
+                Breaking big problems into pieces becomes natural.
+                Logic improves even outside the computer.
+                It builds confidence through small wins.
+                The internet becomes less mysterious.
+                Creativity meets structure in a unique way.
+                Coding changes how you approach challenges.
+                </p>
+            </div>
+            <div class="blogDiv">
+                <H3>AUTHOR : SAM BIHARI</H3>
+                <p>
+                <h4> ☕ 3. The Comfort of Late-Night Tea</h4>
+
+                Late-night tea feels different from morning coffee.
+                The house is quiet and calm.
+                Warm cups slow racing thoughts.
+                It’s a pause at the end of the day.
+                No rush, no schedules, just stillness.
+                Flavors feel richer at night.
+                It becomes a personal ritual.
+                Reflection comes naturally in silence.
+                Even simple moments feel meaningful.
+                Sometimes, peace tastes like tea.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <section></section>
+    <div id="disqus_thread"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://http-fuchsia-olia-31-tiiny-site.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+</body>
+
+</html>
