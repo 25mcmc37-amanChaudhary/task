@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #d2b8b8;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        width: 50%;
+        width: max-content;
+        border: 2px solid #a27a7a;
+        padding: 20px;
+        border-radius: 5px;
+        background: aliceblue;
+        height: auto;
+        box-shadow: 0px 3px 7px 5px #9494a6;
+    }
+
+    h1 {
+        border: 0.5px solid;
+        /* border-radius: 5px; */
+        margin-bottom: 20px;
+        padding: 5px;
+        box-shadow: 2px 2px 3px 1px #b5a1a1;
+    }
+
+    .input-section {
+        border: 0.5px solid;
+        padding: 20px;
+        box-shadow: 2px 2px 3px 1px #b5a1a1;
+        margin-top: 20px;
+    }
+
+    .input-section input,
+    .input-section button {
+        padding: 8px;
+        margin-right: 5px;
+    }
+
+    .filters {
+        margin: 15px 0;
+    }
+
+    .filters button {
+        padding: 6px 12px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+    .filters .active {
+        background: rgb(60, 59, 59);
+        color: white;
+    }
+
+    #taskList {
+        list-style: none;
+        padding: 0;
+    }
+
+    .task {
+        display: flex;
+        align-items: center;
+        background: white;
+        padding: 10px;
+        margin-bottom: 8px;
+        border-radius: 4px;
+    }
+
+    .task.completed span {
+        text-decoration: line-through;
+        color: gray;
+    }
+
+    .task span {
+        margin-left: 10px;
+        flex: 1;
+    }
+
+    .task small {
+        color: #888;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <h1>To-Do List</h1>
+        <hr>
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Enter task">
+            <input type="date" id="dateInput">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+
+        <div class="filters">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="completed">Completed</button>
+            <button data-filter="pending">Pending</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+
+
+    <script src="./todoApp.js">
+  
+    </script>
+</body>
+
+</html>

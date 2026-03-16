@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        background: #121212;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        background: #1e1e1e;
+        padding: 30px;
+        border-radius: 12px;
+        text-align: center;
+        width: 300px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    h2 {
+        color: #fff;
+    }
+
+    input {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 6px;
+        background: #2c2c2c;
+        color: white;
+    }
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        background: #00adb5;
+        color: white;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #019ca3;
+    }
+
+    #result {
+        margin-top: 15px;
+        color: #ddd;
+    }
+</style>
+
+<body>
+
+    <div class="box">
+        <h2>Weather App</h2>
+        <input type="text" id="city" placeholder="Enter city name">
+        <button onclick="getWeather()">Check Weather</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="./weather.js">
+    </script>
+</body>
+
+</html>
